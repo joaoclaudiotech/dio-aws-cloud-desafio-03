@@ -10,7 +10,7 @@ Repositório do segundo desafio do curso Cloud com AWS da [DIO](https://www.dio.
 ## Arquitetura
 Diagrama gerado pelo Designer/Canvas do CloudFormation representando os recursos provisionados pelo template:
 
-![Diagrama de arquitetura](./images/diagrama-canvas.png)
+![Diagrama de arquitetura](imagens/designer-canvas.png)
 
 ## O que eu fiz na prática
 
@@ -18,9 +18,7 @@ Diagrama gerado pelo Designer/Canvas do CloudFormation representando os recursos
 
 ![Criação da stack](imagens/criacao-stack.png)
 
-2. Visualizei o diagrama da infraestrutura no Designer/Canvas
-
-![Designer/Canvas](imagens/designer-canvas.png)
+2. Visualizei o diagrama da infraestrutura no Designer/Canvas (imagem na seção "Arquitetura" acima)
 
 3. Analisei o código do template em YAML/JSON
 
