@@ -16,19 +16,19 @@ Diagrama gerado pelo Designer/Canvas do CloudFormation representando os recursos
 
 1. Criei uma stack no CloudFormation a partir de um template pronto
 
-![Criação da stack](images/criacao-stack.png)
+![Criação da stack](imagens/criacao-stack.png)
 
 2. Visualizei o diagrama da infraestrutura no Designer/Canvas
 
-![Designer/Canvas](images/designer-canvas.png)
+![Designer/Canvas](imagens/designer-canvas.png)
 
 3. Analisei o código do template em YAML/JSON
 
-![Código do template](images/codigo-template.png)
+![Código do template](imagens/codigo-template.png)
 
 4. Verifiquei os outputs da stack (ID da instância e IP público)
 
-![Outputs da stack](images/outputs-stack.png)
+![Outputs da stack](imagens/outputs-stack.png)
 
 ## Minhas impressões
 O maior desafio foi entender o motivo da falha na criação da instância EC2: o erro indicava que o tipo `t2.micro` não era mais elegível para o Free Tier na minha conta, sendo necessário trocar para `t3.micro`. Isso me mostrou como o CloudFormation lida com falhas — fazendo rollback automático dos recursos já criados para manter a stack consistente, e que uma stack em `ROLLBACK_COMPLETE` não pode ser atualizada, sendo necessário excluí-la e criar uma nova. Ficou mais claro como os parâmetros tornam o template reutilizável para diferentes cenários. Pretendo usar esse conhecimento para automatizar a criação de ambientes de teste e desenvolvimento de forma padronizada.
